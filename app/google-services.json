@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "157997793485",
+    "project_id": "login-68102",
+    "storage_bucket": "login-68102.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157997793485:android:e05e23e04872b6d7b22984",
+        "android_client_info": {
+          "package_name": "hcmute.edu.vn.nhom14.appfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157997793485-2i0h4drvtvik74f42vbbdf5tr5l9as3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfJkuvuaVoISN8jNhC1boCB03BbrQaFzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157997793485-2i0h4drvtvik74f42vbbdf5tr5l9as3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
