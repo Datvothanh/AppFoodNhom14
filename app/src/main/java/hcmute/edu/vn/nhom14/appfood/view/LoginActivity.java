@@ -1,4 +1,4 @@
-package hcmute.edu.vn.nhom14.appfood;
+package hcmute.edu.vn.nhom14.appfood.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import hcmute.edu.vn.nhom14.appfood.R;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText emailedit,passedit;
@@ -53,10 +54,10 @@ public class LoginActivity extends AppCompatActivity {
     private void login()  { String email, pass;
     email = emailedit.getText().toString();
     pass = passedit.getText().toString();
-            if (TextUtils.isEmpty(email)) {
+    if (TextUtils.isEmpty(email)) {
         Toast.makeText(this, "Please enter email!", Toast.LENGTH_SHORT).show();
         return;
-    }   if (TextUtils.isEmpty(pass)) {
+    }  if (TextUtils.isEmpty(pass)) {
             Toast.makeText(this, "Please enter pass!", Toast.LENGTH_SHORT).show();
             return;
     }

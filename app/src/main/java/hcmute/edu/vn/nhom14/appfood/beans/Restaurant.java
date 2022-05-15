@@ -1,17 +1,16 @@
-package hcmute.edu.vn.nhom14.appfood;
+package hcmute.edu.vn.nhom14.appfood.beans;
 
-public class FoodRecommend {
+public class Restaurant {
     private int IdFood;
     private String TenFood;
     private String Rating;
-    private String Price;
+    private String Address;
 
-    public FoodRecommend(int idFood,String tenFood ,String rating , String price)
-    {
+    public Restaurant(int idFood, String tenFood, String rating, String address) {
         IdFood = idFood;
         TenFood = tenFood;
         Rating = rating;
-        Price = price;
+        Address = address;
     }
 
     public int getIdFood() {
@@ -38,11 +37,11 @@ public class FoodRecommend {
         Rating = rating;
     }
 
-    public String getPrice() {
-        return Price;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setPrice(String price) {
-        Price = price;
+    public void setAddress(String address) {
+        Address = address;
     }
 }

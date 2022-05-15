@@ -5,7 +5,14 @@
       <map>
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.182" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/add_to_cart_bg.xml" value="0.173" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/background_cyccle.xml" value="0.2005" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/btn_bg.xml" value="0.182" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/button_radius.xml" value="0.2005" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/button_selector.xml" value="0.268" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/button_selector_1.xml" value="0.268" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/changebackground_tab_main.xml" value="0.21" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/changecheck_radiomain.xml" value="0.268" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/changetext_tab_main.xml" value="0.1445" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/ic_arrow_back_black_24dp.xml" value="0.182" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.173" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/ic_cart.xml" value="0.182" />
@@ -16,15 +23,22 @@
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/ic_like.xml" value="0.182" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/input_bg.xml" value="0.182" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/input_bg123.xml" value="0.182" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/radiobuttongroup_main.xml" value="0.268" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/drawable/search_bg.xml" value="0.173" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/Restaurant_recycler.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_account.xml" value="0.265625" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_food_details.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_login.xml" value="0.24497991967871485" />
-        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_main.xml" value="0.30324074074074076" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/allmenu_recycler_items.xml" value="0.536" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_angi.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_odau.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/home_main.xml" value="0.265625" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/layout_odau.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/popular_recycler_items.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/recommended_recycler_items.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/restaurant.xml" value="0.5189003436426117" />
       </map>
     </option>
   </component>
