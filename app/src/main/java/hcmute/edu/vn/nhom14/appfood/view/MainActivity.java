@@ -1,6 +1,6 @@
 package hcmute.edu.vn.nhom14.appfood.view;
 
-import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -8,22 +8,19 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Adapter;
-import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.view.MenuItem;
 
-import java.util.ArrayList;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import hcmute.edu.vn.nhom14.appfood.Database;
 import hcmute.edu.vn.nhom14.appfood.R;
 import hcmute.edu.vn.nhom14.appfood.adapter.ViewPagerAdapter;
-import hcmute.edu.vn.nhom14.appfood.beans.Restaurant;
 
-public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener , RadioGroup.OnCheckedChangeListener{
+
+public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPagerMain;
-    private RadioButton radioodau , radioangi;
+    private BottomNavigationView bottomNavigationView;
+
 
 
     @Override
@@ -31,52 +28,68 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        viewPagerMain = (ViewPager) findViewById(R.id.view_pager);
-        radioodau = (RadioButton) findViewById(R.id.radio_odau);
-        radioangi = (RadioButton) findViewById(R.id.radio_angi);
-        RadioGroup groupodauangi = (RadioGroup) findViewById(R.id.group_main);
+        viewPagerMain = (ViewPager) findViewById(R.id.view_paper);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        ViewPagerAdapter adapterViewPager = new ViewPagerAdapter(getSupportFragmentManager() );
+        ViewPagerAdapter adapterViewPager = new ViewPagerAdapter(getSupportFragmentManager() , FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT );
+
 
         viewPagerMain.setAdapter(adapterViewPager);
-        viewPagerMain.addOnPageChangeListener(this);
+        viewPagerMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        groupodauangi.setOnCheckedChangeListener(this);
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+            switch (position){
+                case 0:
+                    bottomNavigationView.getMenu().findItem(R.id.menu_tab_1).setChecked(true);
+                    break;
+                case 1:
+                    bottomNavigationView.getMenu().findItem(R.id.menu_tab_2).setChecked(true);
+                    break;
+                case 2:
+                    bottomNavigationView.getMenu().findItem(R.id.menu_tab_3).setChecked(true);
+                    break;
+                case 3:
+                    bottomNavigationView.getMenu().findItem(R.id.menu_tab_4).setChecked(true);
+                    break;
+            }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.menu_tab_1:
+                        viewPagerMain.setCurrentItem(0);
+                        break;
+                    case R.id.menu_tab_2:
+                        viewPagerMain.setCurrentItem(1);
+                        break;
+
+                    case R.id.menu_tab_3:
+                        viewPagerMain.setCurrentItem(2);
+                        break;
+                    case R.id.menu_tab_4:
+                        viewPagerMain.setCurrentItem(3);
+                        break;
+                }
+
+                return true;
+            }
+        });
+
     }
 
-    @Override
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-    }
-
-    @Override
-    public void onPageSelected(int position) {
-        switch (position){
-            case 0:
-                radioodau.setChecked(true);
-                break;
-            case 1:
-                radioangi.setChecked(true);
-                break;
-        }
-
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int state) {
-
-    }
-
-    @SuppressLint("NonConstantResourceId")
-    @Override
-    public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-        switch (i){
-            case  R.id.radio_angi:
-                viewPagerMain.setCurrentItem(1);
-                break;
-            case R.id.radio_odau:
-                viewPagerMain.setCurrentItem(0);
-                break;
-        }
-    }
 }

@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import hcmute.edu.vn.nhom14.appfood.view.fragment.AngiFragment;
-import hcmute.edu.vn.nhom14.appfood.view.fragment.OdauFragment;
+import hcmute.edu.vn.nhom14.appfood.view.fragment.AddFragment;
+import hcmute.edu.vn.nhom14.appfood.view.fragment.CartFragment;
+import hcmute.edu.vn.nhom14.appfood.view.fragment.HomeFragment;
+import hcmute.edu.vn.nhom14.appfood.view.fragment.UserFragment;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -14,23 +16,24 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         super(fm, behavior);
     }
 
-    public ViewPagerAdapter(FragmentManager supportFragmentManager) {
-        super(supportFragmentManager);
-    }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new OdauFragment();
+                return new HomeFragment();
+            case 1:
+                return new AddFragment();
+            case 2:
+                return new CartFragment();
             default:
-                return new AngiFragment();
+                return new UserFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 }

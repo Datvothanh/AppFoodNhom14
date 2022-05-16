@@ -28,17 +28,23 @@
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/Restaurant_recycler.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_account.xml" value="0.265625" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_food_details.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_login.xml" value="0.24497991967871485" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_main.xml" value="0.30324074074074076" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/allmenu_recycler_items.xml" value="0.536" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_add.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_angi.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_cart.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_odau.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/fragment_user.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/home_main.xml" value="0.265625" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/layout_odau.xml" value="0.264" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/popular_recycler_items.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/recommended_recycler_items.xml" value="0.4" />
         <entry key="..\:/Users/Asus/AppFood/app/src/main/res/layout/restaurant.xml" value="0.5189003436426117" />
+        <entry key="..\:/Users/Asus/AppFood/app/src/main/res/menu/menu_navigation.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
